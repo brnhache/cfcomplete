@@ -1,0 +1,25 @@
+{
+  "name": "cfcomplete",
+  "displayName": "CFComplete",
+  "description": "ColdFusion Support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "coldfusion",
+      "aliases": ["ColdFusion", "coldfusion"],
+      "extensions": [".cfc",".cfm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "coldfusion",
+      "scopeName": "source.coldfusion",
+      "path": "./syntaxes/coldfusion.tmLanguage.json"
+    }]
+  }
+}
